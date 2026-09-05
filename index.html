@@ -1,748 +1,631 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <meta name="description"
-        content="Join Yaarwin Offical – Exclusive VIP channel with premium tips, real deals, and daily rewards. Click to join now!" />
-
-    <meta name="keywords"
-        content="yaarwin vip, vip channel, telegram vip, real vip tips, premium channel, join telegram, vip group" />
-
-    <meta property="og:title"
-        content="Yaarwin Offical – Join the VIP Channel" />
-
-    <meta property="og:description"
-        content="🔥 Don't miss out! Join Yaarwin Offical – Get exclusive access to premium content, real tips & special rewards. Limited slots available!" />
-
-    <meta property="og:type" content="website" />
-
-    <title>Yaarwin Offical</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;900&family=Inter:wght@400;500;600&display=swap"
-        rel="stylesheet" />
-
-    <style>
-        *,
-        *::before,
-        *::after {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        :root {
-            --bg-dark: #0d0d0d;
-            --bg-card: rgba(30, 30, 30, 0.75);
-            --accent-red: #4b5563;
-            --accent-red-2: #374151;
-            --accent-pink: #f3f4f6;
-            --accent-gold: #9ca3af;
-            --accent-blue: #6b7280;
-            --accent-purple: #4b5563;
-
-            --text-primary: #ffffff;
-            --text-secondary: rgba(255, 255, 255, .72);
-            --text-muted: rgba(255, 255, 255, .45);
-
-            --glow-red: rgba(107, 114, 128, .35);
-            --glow-purple: rgba(75, 85, 99, .25);
-
-            --radius-btn: 16px;
-            --radius-card: 24px;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            font-family: 'Outfit', 'Inter', sans-serif;
-            background-color: var(--bg-dark);
-            color: var(--text-primary);
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            overflow-x: hidden;
-            position: relative;
-        }
-
-        body::before {
-            content: '';
-            position: fixed;
-            inset: 0;
-            background:
-                radial-gradient(circle at 15% 50%, rgba(90, 90, 90, .15), transparent 45%),
-                radial-gradient(circle at 85% 30%, rgba(50, 50, 50, .12), transparent 45%);
-        }
-
-        .orb {
-            position: fixed;
-            border-radius: 50%;
-            filter: blur(80px);
-            opacity: 0.25;
-            pointer-events: none;
-            z-index: 0;
-            animation: floatOrb 8s ease-in-out infinite alternate;
-        }
-
-        .orb-1 {
-            width: 320px;
-            height: 320px;
-            background: var(--accent-purple);
-            top: -80px;
-            left: -80px;
-            animation-delay: 0s;
-        }
-
-        .orb-2 {
-            width: 260px;
-            height: 260px;
-            background: var(--accent-red);
-            bottom: -60px;
-            right: -60px;
-            animation-delay: -3s;
-        }
-
-        .orb-3 {
-            width: 200px;
-            height: 200px;
-            background: var(--accent-blue);
-            top: 50%;
-            right: -40px;
-            animation-delay: -6s;
-        }
-
-        @keyframes floatOrb {
-            from {
-                transform: translate(0, 0) scale(1);
-            }
-
-            to {
-                transform: translate(20px, 30px) scale(1.08);
-            }
-        }
-
-        .stars {
-            position: fixed;
-            inset: 0;
-            z-index: 0;
-            pointer-events: none;
-            overflow: hidden;
-        }
-
-        .star {
-            position: absolute;
-            border-radius: 50%;
-            background: rgba(255, 255, 255, 0.8);
-            animation:
-                twinkle var(--dur, 3s) ease-in-out infinite alternate;
-            animation-delay: var(--delay, 0s);
-        }
-
-        @keyframes twinkle {
-            from {
-                opacity: 0.1;
-                transform: scale(0.6);
-            }
-
-            to {
-                opacity: 0.9;
-                transform: scale(1.2);
-            }
-        }
-
-        .container {
-            position: relative;
-            z-index: 1;
-            width: 100%;
-            max-width: 420px;
-            padding: 32px 20px 48px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 0;
-        }
-
-        .logo-wrapper {
-            position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 8px;
-            animation: fadeSlideDown 0.7s ease both;
-        }
-
-        .logo-glow {
-            position: absolute;
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            background: radial-gradient(
-                circle,
-                rgba(180, 180, 180, .18) 0%,
-                transparent 70%
-            );
-            pointer-events: none;
-            animation: pulseGlow 3s ease-in-out infinite;
-        }
-
-        @keyframes pulseGlow {
-            0%,
-            100% {
-                transform: scale(1);
-                opacity: 0.8;
-            }
-
-            50% {
-                transform: scale(1.15);
-                opacity: 1;
-            }
-        }
-
-        .logo-img {
-            width: 180px;
-            height: 180px;
-            object-fit: cover;
-            border-radius: 50%;
-            border: 4px solid rgba(255, 255, 255, 0.12);
-            background: rgba(255, 255, 255, 0.04);
-            position: relative;
-            z-index: 1;
-            filter:
-                drop-shadow(0 0 20px rgba(170, 170, 170, .35))
-                drop-shadow(0 0 40px rgba(100, 100, 100, .2));
-            animation: logoFloat 4s ease-in-out infinite;
-        }
-
-        @keyframes logoFloat {
-            0%,
-            100% {
-                transform: translateY(0);
-            }
-
-            50% {
-                transform: translateY(-8px);
-            }
-        }
-
-        .brand {
-            text-align: center;
-            margin-bottom: 36px;
-            animation: fadeSlideUp 0.8s 0.2s ease both;
-        }
-
-        .brand-title {
-            font-size: clamp(1.25rem, 6vw, 2.4rem);
-            font-weight: 900;
-            letter-spacing: 0.04em;
-            line-height: 1.1;
-            white-space: nowrap;
-            background: linear-gradient(
-                135deg,
-                #ffffff 0%,
-                #d1d5db 45%,
-                #6b7280 100%
-            );
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            text-shadow: none;
-            margin-bottom: 8px;
-        }
-
-        .brand-tagline {
-            font-size: 0.95rem;
-            font-weight: 500;
-            color: var(--text-secondary);
-            letter-spacing: 0.04em;
-        }
-
-        .divider {
-            width: 60px;
-            height: 3px;
-            border-radius: 2px;
-            background: linear-gradient(
-                90deg,
-                transparent,
-                var(--accent-gold),
-                transparent
-            );
-            margin: 0 auto 36px;
-            animation: fadeSlideUp 0.8s 0.3s ease both;
-        }
-
-        .buttons {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            gap: 16px;
-            animation: fadeSlideUp 0.9s 0.4s ease both;
-        }
-
-        .btn {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 12px;
-            width: 100%;
-            padding: 18px 24px;
-            border: none;
-            border-radius: var(--radius-btn);
-            font-family: 'Outfit', sans-serif;
-            font-size: 1.05rem;
-            font-weight: 700;
-            letter-spacing: 0.06em;
-            text-transform: uppercase;
-            text-decoration: none;
-            cursor: pointer;
-            transition:
-                transform 0.18s ease,
-                box-shadow 0.18s ease,
-                filter 0.18s ease;
-            position: relative;
-            overflow: hidden;
-            -webkit-tap-highlight-color: transparent;
-        }
-
-        .btn::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: linear-gradient(
-                135deg,
-                rgba(255, 255, 255, 0.15) 0%,
-                transparent 60%
-            );
-            border-radius: var(--radius-btn);
-            opacity: 0;
-            transition: opacity 0.2s;
-        }
-
-        .btn:hover::before {
-            opacity: 1;
-        }
-
-        .btn:hover {
-            transform: translateY(-3px) scale(1.02);
-        }
-
-        .btn:active {
-            transform: translateY(0) scale(0.98);
-        }
-
-        .btn-primary {
-            background: linear-gradient(
-                135deg,
-                #3f3f46 0%,
-                #18181b 100%
-            );
-            color: #fff;
-            border: 1px solid #52525b;
-            box-shadow:
-                0 4px 20px var(--glow-red),
-                0 1px 0 rgba(255, 255, 255, 0.15) inset;
-        }
-
-        .btn-primary:hover {
-            box-shadow: 0 8px 28px rgba(120, 120, 120, .35);
-            filter: brightness(1.1);
-        }
-
-        .btn-secondary {
-            background: linear-gradient(
-                135deg,
-                rgba(80, 80, 80, .25),
-                rgba(30, 30, 30, .8)
-            );
-            color: #fff;
-            border: 1px solid rgba(150, 150, 150, .35);
-            box-shadow:
-                0 4px 20px rgba(212, 175, 55, 0.2),
-                0 1px 0 rgba(255, 255, 255, 0.08) inset;
-            backdrop-filter: blur(8px);
-        }
-
-        .btn-secondary:hover {
-            box-shadow:
-                0 8px 32px rgba(212, 175, 55, 0.45),
-                0 1px 0 rgba(255, 255, 255, 0.12) inset;
-            border-color: rgba(212, 175, 55, 0.8);
-            filter: brightness(1.15);
-        }
-
-        .btn-tertiary {
-            background: linear-gradient(
-                135deg,
-                rgba(60, 60, 60, .18),
-                rgba(25, 25, 25, .75)
-            );
-            color: #d1d5db;
-            border: 1px solid rgba(120, 120, 120, .35);
-            box-shadow:
-                0 4px 20px rgba(245, 200, 66, 0.15),
-                0 1px 0 rgba(255, 255, 255, 0.05) inset;
-            backdrop-filter: blur(8px);
-        }
-
-        .btn-tertiary:hover {
-            box-shadow:
-                0 8px 32px rgba(245, 200, 66, 0.35),
-                0 1px 0 rgba(255, 255, 255, 0.10) inset;
-            border-color: rgba(245, 200, 66, 0.7);
-            filter: brightness(1.15);
-        }
-
-        .btn-icon {
-            font-size: 1.25rem;
-            flex-shrink: 0;
-        }
-
-        .timer-card {
-            width: 100%;
-            margin-top: 18px;
-            padding: 18px 20px;
-            border-radius: var(--radius-card);
-            background: linear-gradient(
-                135deg,
-                rgba(45, 45, 45, .75),
-                rgba(25, 25, 25, .9)
-            );
-            border: 1px solid rgba(120, 120, 120, .15);
-            box-shadow:
-                0 12px 30px rgba(0, 0, 0, 0.18),
-                0 1px 0 rgba(255, 255, 255, 0.08) inset;
-            backdrop-filter: blur(10px);
-            text-align: center;
-            animation: fadeSlideUp 1s 0.5s ease both;
-        }
-
-        .timer-label {
-            display: block;
-            font-size: 0.78rem;
-            font-weight: 700;
-            letter-spacing: 0.12em;
-            text-transform: uppercase;
-            color: var(--accent-gold);
-            margin-bottom: 8px;
-        }
-
-        .timer-display {
-            display: block;
-            font-size: 2rem;
-            font-weight: 900;
-            line-height: 1;
-            letter-spacing: 0.08em;
-            color: #fff;
-            text-shadow: 0 0 18px rgba(212, 175, 55, 0.3);
-            font-variant-numeric: tabular-nums;
-        }
-
-        .timer-note {
-            margin-top: 8px;
-            font-size: 0.86rem;
-            color: var(--text-secondary);
-            letter-spacing: 0.03em;
-        }
-
-        .timer-card.expired .timer-display {
-            color: var(--accent-pink);
-        }
-
-        .stats {
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            gap: 24px;
-            margin-top: 40px;
-            animation: fadeSlideUp 1s 0.6s ease both;
-        }
-
-        .stat-item {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 4px;
-        }
-
-        .stat-value {
-            font-size: 1.4rem;
-            font-weight: 900;
-            background: linear-gradient(
-                135deg,
-                var(--accent-gold),
-                var(--accent-pink)
-            );
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .stat-label {
-            font-size: 0.72rem;
-            font-weight: 500;
-            color: var(--text-muted);
-            letter-spacing: 0.05em;
-            text-transform: uppercase;
-        }
-
-        .stat-sep {
-            width: 1px;
-            background: rgba(255, 255, 255, 0.1);
-            align-self: stretch;
-            margin: 4px 0;
-        }
-
-        .footer {
-            margin-top: 44px;
-            font-size: 0.72rem;
-            color: var(--text-muted);
-            letter-spacing: 0.04em;
-            text-align: center;
-            animation: fadeSlideUp 1s 0.8s ease both;
-        }
-
-        .footer a {
-            color: var(--text-secondary);
-            text-decoration: none;
-            transition: color 0.2s;
-        }
-
-        .footer a:hover {
-            color: var(--accent-pink);
-        }
-
-        .live-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            background: rgba(70, 70, 70, .25);
-            border: 1px solid rgba(150, 150, 150, .25);
-            border-radius: 100px;
-            padding: 5px 14px;
-            font-size: 0.75rem;
-            font-weight: 600;
-            color: #d1d5db;
-            letter-spacing: 0.06em;
-            text-transform: uppercase;
-            margin-bottom: 20px;
-            animation: fadeSlideDown 0.6s ease both;
-        }
-
-        .live-dot {
-            width: 7px;
-            height: 7px;
-            border-radius: 50%;
-            background: #10b981;
-            animation: blink 1.2s ease-in-out infinite;
-        }
-
-        @keyframes blink {
-            0%, 100% {
-                opacity: 1;
-                transform: scale(1);
-            }
-
-            50% {
-                opacity: 0.3;
-                transform: scale(0.75);
-            }
-        }
-
-        @keyframes fadeSlideDown {
-            from {
-                opacity: 0;
-                transform: translateY(-20px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        @keyframes fadeSlideUp {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        @media (max-width: 480px) {
-            .brand-title {
-                font-size: clamp(1.25rem, 6vw, 1.6rem);
-            }
-
-            .logo-img {
-                width: 150px;
-                height: 150px;
-            }
-
-            .btn {
-                padding: 16px 20px;
-                font-size: 0.95rem;
-            }
-
-            .timer-display {
-                font-size: 1.7rem;
-            }
-
-            .stats {
-                gap: 16px;
-            }
-
-            .stat-value {
-                font-size: 1.2rem;
-            }
-        }
-    </style>
-
-    <!-- META_PIXEL_SCRIPT_START -->
-    <!-- Meta Pixel Code -->
-    <script>
-        !function (f, b, e, v, n, t, s) {
-            if (f.fbq) return;
-            n = f.fbq = function () {
-                n.callMethod ?
-                    n.callMethod.apply(n, arguments) :
-                    n.queue.push(arguments)
-            };
-            if (!f._fbq) f._fbq = n;
-            n.push = n;
-            n.loaded = !0;
-            n.version = '2.0';
-            n.queue = [];
-            t = b.createElement(e);
-            t.async = !0;
-            t.src = v;
-            s = b.getElementsByTagName(e)[0];
-            s.parentNode.insertBefore(t, s)
-        }(
-            window,
-            document,
-            'script',
-            'https://connect.facebook.net/en_US/fbevents.js'
-        );
-
-        fbq('init', '1093285570056963');
-        fbq('track', 'PageView');
-    </script>
-
-    <noscript>
-        <img
-            height="1"
-            width="1"
-            style="display:none"
-            src="https://www.facebook.com/tr?id=1093285570056963&ev=PageView&noscript=1"
-        />
-    </noscript>
-    <!-- End Meta Pixel Code -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Yaarwin Offical</title>
+  <meta name="description" content="Yaarwin Offical Telegram Community">
+
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+
+  fbq('init', '1093285570056963');
+  fbq('track', 'PageView');
+  </script>
+  <!-- End Meta Pixel Code -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg-dark: #0d0d0d;
+      --bg-card: rgba(30, 30, 30, .75);
+
+      --text-main: #ffffff;
+      --text-muted: #a8a8a8;
+
+      --accent: #ffffff;
+      --accent-soft: rgba(255,255,255,.12);
+
+      --radius-btn: 16px;
+      --radius-card: 24px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+    }
+
+    body {
+      min-height: 100svh;
+      background:
+        radial-gradient(circle at 50% 15%, rgba(255,255,255,.08), transparent 32%),
+        radial-gradient(circle at 15% 80%, rgba(255,255,255,.035), transparent 30%),
+        var(--bg-dark);
+
+      color: var(--text-main);
+      font-family: 'Inter', sans-serif;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      position: relative;
+
+      overflow: hidden;
+    }
+
+    /* Ambient glow */
+    .orb {
+      position: fixed;
+      border-radius: 50%;
+      filter: blur(70px);
+      pointer-events: none;
+      opacity: .15;
+    }
+
+    .orb.one {
+      width: 180px;
+      height: 180px;
+      top: -60px;
+      left: -50px;
+      background: #ffffff;
+    }
+
+    .orb.two {
+      width: 220px;
+      height: 220px;
+      right: -80px;
+      bottom: -80px;
+      background: #ffffff;
+      opacity: .08;
+    }
+
+    /* Stars */
+    .stars {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      overflow: hidden;
+    }
+
+    .star {
+      position: absolute;
+      width: 2px;
+      height: 2px;
+      background: rgba(255,255,255,.7);
+      border-radius: 50%;
+      animation: twinkle 3s infinite ease-in-out;
+    }
+
+    @keyframes twinkle {
+      0%, 100% {
+        opacity: .15;
+      }
+
+      50% {
+        opacity: .8;
+      }
+    }
+
+    /* Main container */
+    .container {
+      width: 100%;
+      max-width: 420px;
 
+      padding: 24px 20px 28px;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      position: relative;
+      z-index: 2;
+    }
+
+    /* Live badge */
+    .live-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+
+      padding: 5px 14px;
+      margin-bottom: 18px;
+
+      border-radius: 50px;
+
+      background: rgba(255,255,255,.07);
+      border: 1px solid rgba(255,255,255,.12);
+
+      color: #ffffff;
+
+      font-size: .72rem;
+      font-weight: 800;
+      letter-spacing: .8px;
+      text-transform: uppercase;
+    }
+
+    .live-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #fff;
+
+      box-shadow: 0 0 10px rgba(255,255,255,.8);
+
+      animation: pulse 1.5s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+
+      50% {
+        transform: scale(.65);
+        opacity: .5;
+      }
+    }
+
+    /* Brand */
+    .brand {
+      text-align: center;
+      margin-bottom: 24px;
+      width: 100%;
+    }
+
+    .logo-img {
+      width: 180px;
+      height: 180px;
+
+      object-fit: cover;
+
+      border-radius: 50%;
+
+      border: 4px solid rgba(255,255,255,.85);
+
+      box-shadow:
+        0 0 20px rgba(255,255,255,.12),
+        0 0 50px rgba(255,255,255,.05);
+
+      display: block;
+      margin: 0 auto 14px;
+    }
+
+    .brand-title {
+      font-family: 'Cinzel', serif;
+
+      font-size: clamp(1.25rem, 6vw, 2.4rem);
+      font-weight: 900;
+
+      line-height: 1.1;
+
+      white-space: nowrap;
+
+      text-shadow:
+        0 0 10px rgba(255,255,255,.12);
+    }
+
+    .tagline {
+      margin-top: 7px;
+
+      color: var(--text-muted);
+
+      font-size: .82rem;
+      font-weight: 500;
+
+      letter-spacing: .3px;
+    }
+
+    /* Divider */
+    .divider {
+      width: 60px;
+      height: 3px;
+
+      margin: 0 auto 24px;
+
+      border-radius: 10px;
+
+      background: #ffffff;
+
+      box-shadow: 0 0 12px rgba(255,255,255,.35);
+    }
+
+    /* Buttons */
+    .buttons {
+      width: 100%;
+
+      display: flex;
+      flex-direction: column;
+
+      gap: 12px;
+    }
+
+    .btn {
+      width: 100%;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      padding: 16px 20px;
+
+      border-radius: var(--radius-btn);
+
+      text-decoration: none;
+
+      font-size: 1rem;
+      font-weight: 800;
+
+      letter-spacing: .4px;
+
+      transition:
+        transform .2s ease,
+        box-shadow .2s ease,
+        background .2s ease;
+
+      cursor: pointer;
+    }
+
+    .btn-secondary {
+      background: #ffffff;
+      color: #0d0d0d;
+
+      box-shadow:
+        0 8px 25px rgba(255,255,255,.08);
+    }
+
+    .btn-secondary:hover {
+      transform: translateY(-2px);
+
+      box-shadow:
+        0 12px 30px rgba(255,255,255,.14);
+    }
+
+    .btn-secondary:active {
+      transform: scale(.98);
+    }
+
+    /* Timer */
+    .timer-card {
+      width: 100%;
+
+      margin-top: 14px;
+
+      padding: 15px 20px;
+
+      border-radius: var(--radius-card);
+
+      background: var(--bg-card);
+
+      border: 1px solid rgba(255,255,255,.09);
+
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+
+      text-align: center;
+
+      box-shadow:
+        inset 0 1px 0 rgba(255,255,255,.04);
+    }
+
+    .timer-label {
+      color: var(--text-muted);
+
+      font-size: .72rem;
+      font-weight: 700;
+
+      letter-spacing: .7px;
+      text-transform: uppercase;
+
+      margin-bottom: 5px;
+    }
+
+    .timer-display {
+      font-family: 'Cinzel', serif;
+
+      font-size: 2rem;
+      font-weight: 900;
+
+      line-height: 1;
+
+      letter-spacing: 2px;
+    }
+
+    .timer-note {
+      color: #777;
+
+      font-size: .62rem;
+
+      margin-top: 7px;
+    }
+
+    /* Stats */
+    .stats {
+      width: 100%;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      gap: 18px;
+
+      margin-top: 24px;
+    }
+
+    .stat {
+      flex: 1;
+      text-align: center;
+    }
+
+    .stat-number {
+      font-size: .95rem;
+      font-weight: 900;
+
+      line-height: 1.2;
+    }
+
+    .stat-label {
+      color: #777;
+
+      font-size: .58rem;
+      font-weight: 700;
+
+      letter-spacing: .5px;
+
+      margin-top: 3px;
+    }
+
+    /* Footer */
+    .footer {
+      margin-top: 24px;
+
+      text-align: center;
+
+      color: #555;
+
+      font-size: .62rem;
+    }
+
+    .footer span {
+      color: #888;
+      font-weight: 700;
+    }
+
+    /* Small screens */
+    @media (max-height: 700px) {
+      .container {
+        padding-top: 12px;
+        padding-bottom: 12px;
+      }
+
+      .live-badge {
+        margin-bottom: 10px;
+      }
+
+      .logo-img {
+        width: 135px;
+        height: 135px;
+        margin-bottom: 10px;
+      }
+
+      .brand {
+        margin-bottom: 16px;
+      }
+
+      .divider {
+        margin-bottom: 16px;
+      }
+
+      .timer-card {
+        margin-top: 10px;
+        padding: 12px 18px;
+      }
+
+      .stats {
+        margin-top: 16px;
+      }
+
+      .footer {
+        margin-top: 14px;
+      }
+    }
+
+    @media (max-width: 360px) {
+      .container {
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+
+      .logo-img {
+        width: 150px;
+        height: 150px;
+      }
+
+      .brand-title {
+        font-size: 1.25rem;
+      }
+
+      .btn {
+        padding: 14px 18px;
+        font-size: .92rem;
+      }
+
+      .timer-display {
+        font-size: 1.7rem;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-    <!-- Ambient Background Orbs -->
-    <div class="orb orb-1"></div>
-    <div class="orb orb-2"></div>
-    <div class="orb orb-3"></div>
+  <div class="orb one"></div>
+  <div class="orb two"></div>
 
-    <!-- Twinkling Star Particles -->
-    <div class="stars" id="stars"></div>
+  <div class="stars" id="stars"></div>
 
-    <!-- Main Content -->
-    <main class="container" role="main">
+  <main class="container">
 
-        <!-- Live Badge -->
-        <div class="live-badge" aria-label="Live site">
-            <span class="live-dot"></span>
-            Live Now
-        </div>
+    <div class="live-badge">
+      <span class="live-dot"></span>
+      LIVE NOW
+    </div>
 
-        <!-- Logo -->
-        <div class="logo-wrapper" aria-hidden="true">
-            <div class="logo-glow"></div>
+    <div class="brand">
 
-            <img
-                class="logo-img"
-                src="images.jpeg"
-                alt="Yaarwin Offical Logo"
-                id="site-logo"
-                loading="eager"
-            />
-        </div>
+      <img
+        src="images.jpeg"
+        alt="Yaarwin Offical"
+        class="logo-img"
+      >
 
-        <!-- Brand Name -->
-        <div class="brand">
-            <h1 class="brand-title">Yaarwin Offical</h1>
+      <h1 class="brand-title">
+        𝐘𝐚𝐚𝐫𝐰𝐢𝐧 𝐎𝐟𝐟𝐢𝐜𝐚𝐥
+      </h1>
 
-            <p class="brand-tagline">
-                Your Premium Destination 🎰
-            </p>
-        </div>
+      <p class="tagline">
+        Your Premium Destination 🎰
+      </p>
 
-        <!-- Gradient Divider -->
-        <div class="divider" role="presentation"></div>
+    </div>
 
-        <!-- CTA Buttons -->
-        <nav class="buttons" aria-label="Main actions">
+    <div class="divider"></div>
 
-            <a
-                id="btn-gift"
-                href="https://t.me/+qI2onufHZ6AyMTQ1"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="btn btn-secondary"
-                aria-label="Join Yaarwin Offical on Telegram"
-            >
-                <span class="btn-icon">JOIN NOW</span>
-            </a>
+    <div class="buttons">
 
-        </nav>
+      <a
+        href="https://t.me/+qI2onufHZ6AyMTQ1"
+        class="btn btn-secondary"
+        id="joinBtn"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        JOIN NOW
+      </a>
 
-        <!-- Countdown -->
-        <section
-            class="timer-card"
-            id="free-join-timer"
-            aria-live="polite"
-            aria-label="Free join countdown"
-        >
+    </div>
 
-            <span class="timer-label">
-                Time Left For Free Join
-            </span>
+    <div class="timer-card">
 
-            <span
-                class="timer-display"
-                id="timer-display"
-            >00:20</span>
+      <div class="timer-label">
+        Time Left For Free Join
+      </div>
 
-            <p
-                class="timer-note"
-                id="timer-note"
-            >
-                Offer starts counting down as soon as you open the page.
-            </p>
+      <div class="timer-display" id="timer">
+        00:20
+      </div>
 
-        </section>
+      <div class="timer-note">
+        Offer starts counting down as soon as you open the page.
+      </div>
 
-        <!-- Stats Row -->
-        <div
-            class="stats"
-            aria-label="Platform statistics"
-        >
+    </div>
 
-            <div class="stat-item">
-         
+    <!-- Stats -->
+    <div class="stats">
+
+      <div class="stat">
+        <div class="stat-number">12k+</div>
+        <div class="stat-label">MEMBERS</div>
+      </div>
+
+      <div class="stat">
+        <div class="stat-number">24/7</div>
+        <div class="stat-label">UPDATES</div>
+      </div>
+
+      <div class="stat">
+        <div class="stat-number">LIVE</div>
+        <div class="stat-label">ACTIVE</div>
+      </div>
+
+    </div>
+
+    <div class="footer">
+      © 2026 <span>Yaarwin Offical</span> • All Rights Reserved
+    </div>
+
+  </main>
+
+  <script>
+
+    /* Stars */
+    const starsContainer = document.getElementById("stars");
+
+    for (let i = 0; i < 45; i++) {
+
+      const star = document.createElement("span");
+
+      star.className = "star";
+
+      star.style.left = Math.random() * 100 + "%";
+      star.style.top = Math.random() * 100 + "%";
+
+      star.style.animationDelay =
+        Math.random() * 3 + "s";
+
+      star.style.opacity =
+        Math.random() * .6 + .1;
+
+      starsContainer.appendChild(star);
+    }
+
+
+    /* 20 Second Countdown */
+    let timeLeft = 20;
+
+    const timer =
+      document.getElementById("timer");
+
+    const countdown =
+      setInterval(() => {
+
+        timeLeft--;
+
+        if (timeLeft < 0) {
+          timeLeft = 0;
+          clearInterval(countdown);
+        }
+
+        timer.textContent =
+          "00:" + String(timeLeft).padStart(2, "0");
+
+      }, 1000);
+
+
+    /* Telegram Click Tracking */
+    document
+      .getElementById("joinBtn")
+      .addEventListener("click", function () {
+
+        if (typeof fbq === "function") {
+          fbq("track", "Lead");
+        }
+
+      });
+
+  </script>
+
+</body>
+    </html>
