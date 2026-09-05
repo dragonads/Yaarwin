@@ -18,27 +18,34 @@
   s.parentNode.insertBefore(t,s)}(window, document,'script',
   'https://connect.facebook.net/en_US/fbevents.js');
 
-  fbq('init', '1093285570056963');
+  fbq('init', '1356504302883470');
   fbq('track', 'PageView');
   </script>
+
+  <noscript>
+    <img
+      height="1"
+      width="1"
+      style="display:none"
+      src="https://www.facebook.com/tr?id=1356504302883470&ev=PageView&noscript=1"
+    />
+  </noscript>
   <!-- End Meta Pixel Code -->
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet"
+  >
 
   <style>
     :root {
       --bg-dark: #0d0d0d;
-      --bg-card: rgba(30, 30, 30, .75);
-
-      --text-main: #ffffff;
+      --bg-card: rgba(30,30,30,.75);
+      --text-main: #fff;
       --text-muted: #a8a8a8;
-
-      --accent: #ffffff;
-      --accent-soft: rgba(255,255,255,.12);
-
       --radius-btn: 16px;
       --radius-card: 24px;
     }
@@ -58,8 +65,16 @@
     body {
       min-height: 100svh;
       background:
-        radial-gradient(circle at 50% 15%, rgba(255,255,255,.08), transparent 32%),
-        radial-gradient(circle at 15% 80%, rgba(255,255,255,.035), transparent 30%),
+        radial-gradient(
+          circle at 50% 15%,
+          rgba(255,255,255,.08),
+          transparent 32%
+        ),
+        radial-gradient(
+          circle at 15% 80%,
+          rgba(255,255,255,.035),
+          transparent 30%
+        ),
         var(--bg-dark);
 
       color: var(--text-main);
@@ -70,11 +85,10 @@
       align-items: center;
 
       position: relative;
-
       overflow: hidden;
     }
 
-    /* Ambient glow */
+    /* Ambient Glow */
     .orb {
       position: fixed;
       border-radius: 50%;
@@ -88,7 +102,7 @@
       height: 180px;
       top: -60px;
       left: -50px;
-      background: #ffffff;
+      background: #fff;
     }
 
     .orb.two {
@@ -96,7 +110,7 @@
       height: 220px;
       right: -80px;
       bottom: -80px;
-      background: #ffffff;
+      background: #fff;
       opacity: .08;
     }
 
@@ -118,7 +132,7 @@
     }
 
     @keyframes twinkle {
-      0%, 100% {
+      0%,100% {
         opacity: .15;
       }
 
@@ -127,7 +141,7 @@
       }
     }
 
-    /* Main container */
+    /* Container */
     .container {
       width: 100%;
       max-width: 420px;
@@ -142,7 +156,7 @@
       z-index: 2;
     }
 
-    /* Live badge */
+    /* Live Badge */
     .live-badge {
       display: inline-flex;
       align-items: center;
@@ -156,10 +170,11 @@
       background: rgba(255,255,255,.07);
       border: 1px solid rgba(255,255,255,.12);
 
-      color: #ffffff;
+      color: #fff;
 
       font-size: .72rem;
       font-weight: 800;
+
       letter-spacing: .8px;
       text-transform: uppercase;
     }
@@ -167,6 +182,7 @@
     .live-dot {
       width: 7px;
       height: 7px;
+
       border-radius: 50%;
       background: #fff;
 
@@ -176,7 +192,7 @@
     }
 
     @keyframes pulse {
-      0%, 100% {
+      0%,100% {
         transform: scale(1);
         opacity: 1;
       }
@@ -189,9 +205,9 @@
 
     /* Brand */
     .brand {
+      width: 100%;
       text-align: center;
       margin-bottom: 24px;
-      width: 100%;
     }
 
     .logo-img {
@@ -216,6 +232,7 @@
       font-family: 'Cinzel', serif;
 
       font-size: clamp(1.25rem, 6vw, 2.4rem);
+
       font-weight: 900;
 
       line-height: 1.1;
@@ -246,12 +263,13 @@
 
       border-radius: 10px;
 
-      background: #ffffff;
+      background: #fff;
 
-      box-shadow: 0 0 12px rgba(255,255,255,.35);
+      box-shadow:
+        0 0 12px rgba(255,255,255,.35);
     }
 
-    /* Buttons */
+    /* Button */
     .buttons {
       width: 100%;
 
@@ -281,14 +299,11 @@
 
       transition:
         transform .2s ease,
-        box-shadow .2s ease,
-        background .2s ease;
-
-      cursor: pointer;
+        box-shadow .2s ease;
     }
 
     .btn-secondary {
-      background: #ffffff;
+      background: #fff;
       color: #0d0d0d;
 
       box-shadow:
@@ -336,6 +351,7 @@
       font-weight: 700;
 
       letter-spacing: .7px;
+
       text-transform: uppercase;
 
       margin-bottom: 5px;
@@ -381,7 +397,6 @@
     .stat-number {
       font-size: .95rem;
       font-weight: 900;
-
       line-height: 1.2;
     }
 
@@ -412,8 +427,9 @@
       font-weight: 700;
     }
 
-    /* Small screens */
+    /* Small Height */
     @media (max-height: 700px) {
+
       .container {
         padding-top: 12px;
         padding-bottom: 12px;
@@ -451,7 +467,9 @@
       }
     }
 
+    /* Small Width */
     @media (max-width: 360px) {
+
       .container {
         padding-left: 16px;
         padding-right: 16px;
@@ -487,11 +505,13 @@
 
   <main class="container">
 
+    <!-- Live -->
     <div class="live-badge">
       <span class="live-dot"></span>
       LIVE NOW
     </div>
 
+    <!-- Brand -->
     <div class="brand">
 
       <img
@@ -510,8 +530,10 @@
 
     </div>
 
+    <!-- Divider -->
     <div class="divider"></div>
 
+    <!-- Telegram Button -->
     <div class="buttons">
 
       <a
@@ -526,6 +548,7 @@
 
     </div>
 
+    <!-- Timer -->
     <div class="timer-card">
 
       <div class="timer-label">
@@ -562,6 +585,7 @@
 
     </div>
 
+    <!-- Footer -->
     <div class="footer">
       © 2026 <span>Yaarwin Offical</span> • All Rights Reserved
     </div>
@@ -571,16 +595,21 @@
   <script>
 
     /* Stars */
-    const starsContainer = document.getElementById("stars");
+    const starsContainer =
+      document.getElementById("stars");
 
     for (let i = 0; i < 45; i++) {
 
-      const star = document.createElement("span");
+      const star =
+        document.createElement("span");
 
       star.className = "star";
 
-      star.style.left = Math.random() * 100 + "%";
-      star.style.top = Math.random() * 100 + "%";
+      star.style.left =
+        Math.random() * 100 + "%";
+
+      star.style.top =
+        Math.random() * 100 + "%";
 
       star.style.animationDelay =
         Math.random() * 3 + "s";
@@ -609,7 +638,8 @@
         }
 
         timer.textContent =
-          "00:" + String(timeLeft).padStart(2, "0");
+          "00:" +
+          String(timeLeft).padStart(2, "0");
 
       }, 1000);
 
@@ -620,7 +650,12 @@
       .addEventListener("click", function () {
 
         if (typeof fbq === "function") {
-          fbq("track", "Lead");
+
+          fbq(
+            "trackCustom",
+            "TelegramClick"
+          );
+
         }
 
       });
@@ -628,4 +663,4 @@
   </script>
 
 </body>
-    </html>
+  </html>
